@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "profile": 14,
+  "repository": "agent-observability-field-guide",
+  "reviewed_on": "2026-11-21",
+  "comparison_axes": [
+    "Layer",
+    "Project",
+    "Provides",
+    "Best fit",
+    "Check first"
+  ],
+  "entries": [
+    {
+      "name": "Telemetry standard",
+      "role_or_focus": "OpenTelemetry",
+      "url": "https://github.com/open-telemetry/opentelemetry-specification",
+      "supported_claim": "Vendor-neutral traces, metrics, logs, context, and OTLP specifications.",
+      "best_use": "Keep transport and trace concepts portable.",
+      "important_boundary": "GenAI semantic-convention maturity and captured-data policy.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "AI semantic conventions",
+      "role_or_focus": "OpenInference",
+      "url": "https://github.com/Arize-ai/openinference",
+      "supported_claim": "Semantic conventions and instrumentation for AI application traces.",
+      "best_use": "Normalize spans across model, retrieval, and agent frameworks.",
+      "important_boundary": "Compatibility with the chosen backend and privacy policy.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "Instrumentation SDK",
+      "role_or_focus": "OpenLLMetry",
+      "url": "https://github.com/traceloop/openllmetry",
+      "supported_claim": "OpenTelemetry-based instrumentation for LLM application frameworks/providers.",
+      "best_use": "Add automatic tracing while retaining OTLP export.",
+      "important_boundary": "Exactly which inputs/outputs are captured and redacted.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "Self-hosted tracing/evals",
+      "role_or_focus": "Langfuse",
+      "url": "https://github.com/langfuse/langfuse",
+      "supported_claim": "Open-source LLM engineering platform for traces, prompts, evaluations, and metrics.",
+      "best_use": "Teams wanting a broad self-hostable application layer.",
+      "important_boundary": "License/deployment requirements and ingestion schema.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "Open-source AI observability",
+      "role_or_focus": "Phoenix",
+      "url": "https://github.com/Arize-ai/phoenix",
+      "supported_claim": "Tracing, evaluation, and analysis for AI applications.",
+      "best_use": "Inspect retrieval, model, and agent behavior locally or in a service.",
+      "important_boundary": "Storage/retention and framework instrumentation path.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "OpenTelemetry-native platform",
+      "role_or_focus": "OpenLIT",
+      "url": "https://github.com/openlit/openlit",
+      "supported_claim": "Open-source observability and evaluation components oriented around OpenTelemetry.",
+      "best_use": "OTel-centered self-hosted monitoring.",
+      "important_boundary": "Supported integrations and default data capture.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "LLM gateway/observability",
+      "role_or_focus": "Helicone",
+      "url": "https://github.com/Helicone/helicone",
+      "supported_claim": "Open-source gateway and observability platform for LLM requests.",
+      "best_use": "Proxy-level logging, caching, rate/cost analytics.",
+      "important_boundary": "Traffic routing implications and sensitive payload retention.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "Collector/backend",
+      "role_or_focus": "SigNoz",
+      "url": "https://github.com/SigNoz/signoz",
+      "supported_claim": "Open-source OpenTelemetry-native observability backend.",
+      "best_use": "Correlate agent traces with service metrics and logs.",
+      "important_boundary": "AI-specific views and semantics may require custom dashboards.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    }
+  ],
+  "field_provenance": {
+    "supported_claim": "source-backed at the cited URL, subject to the recorded review date/version",
+    "best_use": "author recommendation; requires local validation",
+    "important_boundary": "author analysis unless the linked source explicitly states it"
+  }
+}

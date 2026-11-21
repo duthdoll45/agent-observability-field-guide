@@ -1,0 +1,42 @@
+schema_version: "1.0"
+privacy_defaults:
+  prompts_and_outputs: off
+  authorization_headers: forbidden
+  api_keys_and_cookies: forbidden
+  tool_arguments: allowlist-and-redact
+  retrieval_content: reference-or-approved-redacted-preview
+  deletion_test_required: true
+span:
+  required:
+    trace_id: string
+    span_id: string
+    parent_span_id: string-or-null
+    started_at: iso8601
+    ended_at: iso8601
+    operation: [model, tool, retrieval, agent-step]
+    status: [ok, error, cancelled, unknown]
+    schema_version: string
+    instrumentation_version: string
+  optional_with_provenance:
+    provider: string
+    model_identifier: string
+    input_tokens: integer
+    output_tokens: integer
+    cost: number
+    latency_ms: number
+    retry_of_span_id: string
+  sensitive_default_off:
+    prompt_preview: string
+    output_preview: string
+    tool_arguments: object
+    retrieved_content: string
+failure_tests:
+  - failed-tool-and-retry-chain
+  - slow-retrieval
+  - provider-or-model-drift
+  - redaction-canary-crossing
+  - collector-or-backend-outage
+retention:
+  owner: "<policy owner>"
+  duration_by_data_class: "<fill>"
+  backup_deletion_behavior: "<fill>"

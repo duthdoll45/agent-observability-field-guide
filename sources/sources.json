@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-11-21",
+  "sources": [
+    {
+      "title": "Telemetry standard",
+      "url": "https://github.com/open-telemetry/opentelemetry-specification",
+      "type": "upstream_repository",
+      "supports": "Vendor-neutral traces, metrics, logs, context, and OTLP specifications.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Vendor-neutral traces, metrics, logs, context, and OTLP specifications.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "AI semantic conventions",
+      "url": "https://github.com/Arize-ai/openinference",
+      "type": "upstream_repository",
+      "supports": "Semantic conventions and instrumentation for AI application traces.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Semantic conventions and instrumentation for AI application traces.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "Instrumentation SDK",
+      "url": "https://github.com/traceloop/openllmetry",
+      "type": "upstream_repository",
+      "supports": "OpenTelemetry-based instrumentation for LLM application frameworks/providers.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "OpenTelemetry-based instrumentation for LLM application frameworks/providers.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "Self-hosted tracing/evals",
+      "url": "https://github.com/langfuse/langfuse",
+      "type": "upstream_repository",
+      "supports": "Open-source LLM engineering platform for traces, prompts, evaluations, and metrics.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Open-source LLM engineering platform for traces, prompts, evaluations, and metrics.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "Open-source AI observability",
+      "url": "https://github.com/Arize-ai/phoenix",
+      "type": "upstream_repository",
+      "supports": "Tracing, evaluation, and analysis for AI applications.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Tracing, evaluation, and analysis for AI applications.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "OpenTelemetry-native platform",
+      "url": "https://github.com/openlit/openlit",
+      "type": "upstream_repository",
+      "supports": "Open-source observability and evaluation components oriented around OpenTelemetry.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Open-source observability and evaluation components oriented around OpenTelemetry.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "LLM gateway/observability",
+      "url": "https://github.com/Helicone/helicone",
+      "type": "upstream_repository",
+      "supports": "Open-source gateway and observability platform for LLM requests.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Open-source gateway and observability platform for LLM requests.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "OpenTelemetry GenAI semantic conventions",
+      "url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/",
+      "type": "official_specification_documentation",
+      "supports": "Documents OpenTelemetry semantic conventions for generative AI operations.",
+      "authority": "OpenTelemetry project documentation",
+      "version_or_date": "moving semantic conventions; reviewed 2026-11-21",
+      "claim_scope": "Attribute and span conventions on the reviewed GenAI documentation page.",
+      "does_not_support": "This page alone does not establish stability, backend mapping, data retention, or interoperability for a local stack."
+    },
+    {
+      "title": "Helicone gateway documentation",
+      "url": "https://docs.helicone.ai/getting-started/integration-method/gateway",
+      "type": "official_project_documentation",
+      "supports": "Documents the Helicone gateway integration path.",
+      "authority": "Helicone upstream project documentation",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "The gateway integration path described by the reviewed page.",
+      "does_not_support": "This page alone does not establish payload privacy, outage behavior, hosted/self-hosted parity, or suitability for a deployment."
+    },
+    {
+      "title": "Collector/backend",
+      "url": "https://github.com/SigNoz/signoz",
+      "type": "upstream_repository",
+      "supports": "Open-source OpenTelemetry-native observability backend.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Open-source OpenTelemetry-native observability backend.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    }
+  ]
+}
