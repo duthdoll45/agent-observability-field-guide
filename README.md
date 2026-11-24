@@ -1,5 +1,10 @@
 # Open-Source LLM and Agent Observability Stack
 
+
+> **Decision:** Use this guide to choose capture boundaries and trace model calls, retrieval, tools, and agent decisions without making one UI the data contract; skip it if you expect observability to replace privacy policy or evaluation.
+>
+> **For:** LLM platform engineers, agent operators, and incident investigators  ·  **Not for:** teams seeking a product leaderboard or permission to retain raw sensitive payloads
+
 Instrument model calls, retrieval, tool execution, and agent decisions without making one UI your data contract. Start by choosing the capture boundary and privacy policy; then choose instrumentation and storage.
 
 “Open source” does not by itself prove that every hosted feature is self-hostable, that schemas are interchangeable, or that payloads are safely redacted.
@@ -98,6 +103,14 @@ Version the schema and semantic-convention mapping. Re-run canary, outage, acces
 
 Sources: [`sources/sources.json`](sources/sources.json).
 
+## Adjacent guides
+
+- [agent-execution-control-sandbox](https://github.com/MargaritaOfficial/agent-execution-control-sandbox) — Use it when traces reveal that the execution boundary itself needs stronger isolation and lifecycle control.
+- [llm-test-determinism-guide](https://github.com/Simmondsun/llm-test-determinism-guide) — Use it when observed behavior must be converted into stable CI regression checks.
+- [code-rag-chunking-benchmark](https://github.com/Mustafa1801/code-rag-chunking-benchmark) — Use it when retrieval spans need a controlled benchmark rather than ad hoc production anecdotes.
+
 ## License
 
 Original architecture, checklist, and event schema are available under CC BY 4.0. Linked projects/specifications retain their terms.
+
+If this saved you a decision, star the repo — it is how the next reader finds it.
